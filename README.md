@@ -86,19 +86,39 @@ Os testes em pytest validam:
 ### unittest
 Existe uma classe `TestBibliotecaComUnittest` para demonstrar a mesma lógica usando a biblioteca padrão do Python.
 
-## Como executar
+## Como preparar o ambiente e executar
+
+Na pasta do projeto, crie e ative um ambiente virtual:
+
+Linux/macOS:
 
 ```bash
-cd atividade-testes-biblioteca
-.venv/bin/python -m pytest -q
+python3 -m venv .venv
+source .venv/bin/activate
 ```
+
+Windows (PowerShell):
+
+```powershell
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+Instale as dependências de desenvolvimento e execute os testes:
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -q
+```
+
+O ambiente `.venv` não é compartilhado pelo Git; cada pessoa cria o seu localmente usando esses comandos.
 
 ## Resultado verificado
 
 A suíte foi executada com sucesso e todos os testes passaram:
 
 ```text
-27 passed in 0.05s
+30 passed
 ```
 
 ## Interpretação do resultado
