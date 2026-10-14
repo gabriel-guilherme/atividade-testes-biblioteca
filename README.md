@@ -31,7 +31,6 @@ atividade-testes-biblioteca/
 │   ├── test_unittest.py
 │   └── test_validadores.py
 ├── README.md
-└── Atividade_Avaliativa_Unidade_1_Testes_de_Software.docx.pdf
 ```
 
 ## Módulos e responsabilidades
@@ -87,10 +86,15 @@ Os testes em pytest validam:
 ### unittest
 Existe uma classe `TestBibliotecaComUnittest` para demonstrar a mesma lógica usando a biblioteca padrão do Python.
 
-## Como executar
+## Como preparar o ambiente e executar
+
+Na pasta do projeto, crie e ative um ambiente virtual:
+
+Linux/macOS:
 
 
 ```bash
+<<<<<<< HEAD
 python -m venv .venv
 source .venv/bin/activate
 pip install pytest pytest-cov
@@ -106,14 +110,34 @@ python -m pytest --cov=biblioteca --cov-report=term-missing
 ```bash
 python -m pytest tests/test_biblioteca.py -q
 python -m pytest -k emprestimo -q
+=======
+python3 -m venv .venv
+source .venv/bin/activate
+>>>>>>> 089a1e798597d8b94cd2df8431675b099f26d905
 ```
+
+Windows (PowerShell):
+
+```powershell
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+Instale as dependências de desenvolvimento e execute os testes:
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -q
+```
+
+O ambiente `.venv` não é compartilhado pelo Git; cada pessoa cria o seu localmente usando esses comandos.
 
 ## Resultado verificado
 
 A suíte foi executada com sucesso e todos os testes passaram:
 
 ```text
-27 passed in 0.05s
+30 passed
 ```
 
 ## Interpretação do resultado
