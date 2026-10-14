@@ -31,7 +31,6 @@ atividade-testes-biblioteca/
 │   ├── test_unittest.py
 │   └── test_validadores.py
 ├── README.md
-└── Atividade_Avaliativa_Unidade_1_Testes_de_Software.docx.pdf
 ```
 
 ## Módulos e responsabilidades
