@@ -89,9 +89,23 @@ Existe uma classe `TestBibliotecaComUnittest` para demonstrar a mesma lógica us
 
 ## Como executar
 
+
 ```bash
-cd atividade-testes-biblioteca
-.venv/bin/python -m pytest -q
+python -m venv .venv
+source .venv/bin/activate
+pip install pytest pytest-cov
+```
+
+```bash
+python -m pytest -q
+python -m pytest -v
+python -m pytest --cov=biblioteca --cov-report=term-missing
+```
+
+
+```bash
+python -m pytest tests/test_biblioteca.py -q
+python -m pytest -k emprestimo -q
 ```
 
 ## Resultado verificado
