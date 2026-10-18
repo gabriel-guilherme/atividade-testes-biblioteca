@@ -209,3 +209,7 @@ biblioteca/validators.py       9      0   100%
 TOTAL                         96      4    96%
 30 passed in 0.18s
 ```
+
+
+### Apresentação
+https://youtu.be/1Llk8nG_N2M
