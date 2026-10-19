@@ -212,4 +212,5 @@ TOTAL                         96      4    96%
 
 
 ### Apresentação
+PS: Esqueci de rodar a cobertura mas está acima mostrando que poucas partes do código não tem cobertura de testes.
 https://youtu.be/1Llk8nG_N2M
